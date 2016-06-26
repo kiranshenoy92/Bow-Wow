@@ -1,0 +1,6 @@
+{
+  "name": "Bow-Wow Getting Started",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/kiranshenoy92/Bow-Wow",
+  "keywords": ["node", "express", "static"]
+}

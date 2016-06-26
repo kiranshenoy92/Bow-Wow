@@ -1,0 +1,9 @@
+﻿
+        <form class="form-auth" ng-submit="login()">
+            <h2>Login</h2>
+            <p class="bg-warning">{{error_message}}</p>
+            <p class="bg-success">{{registration_message}}</p>
+            <input type="username" name="username" ng-model="user.username" placeholder="Username or mobile number" class="form-control"><br>
+            <input type="password" name="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </form>

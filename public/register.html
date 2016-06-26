@@ -1,0 +1,16 @@
+﻿
+        <form class="form-auth" ng-submit="register()" name="registrationForm">
+            <h2>Register</h2>
+            <p class="text-warning">{{error_message}}</p>
+            <input type="email" ng-model="user.username" placeholder="Username" class="form-control" required><br>
+            <input type="password" name="password" ng-model="user.password" placeholder="Password" class="form-control" ng-pattern="passwordPattern" required><br>
+            <input type="text" name="fname" ng-model='user.firstName' placeholder="First Name" class="form-control" ng-pattern="regex" required><br>
+            <input type="text" name="sname" ng-model='user.secondName' placeholder="Second Name" class="form-control" ng-pattern="regex" required><br>
+            <input type="text" name="mobile" ng-model='user.mobile' ng-pattern="mobilePattern" placeholder="Mobile Number" class="form-control" required><br>
+            <input type="radio" name="gender" ng-model="user.gender" value="male" ng-required="!user.gender"> Male
+            <input type="radio" name="gender" ng-model="user.gender" value="female" ng-required="!user.gender"> Female
+            <input type="radio" name="gender" ng-model="user.gender" value="other" ng-required="!user.gender"> Other<br>
+            <textarea required name="aboutYou" ng-model="user.aboutYou" class="form-control" maxlength="200" rows="3" placeholder="About You" ></textarea>
+            <input type="submit" value="Register" class="btn btn-primary" />
+        </form>
+ 
